@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/iv_happy"
+        android:layout_width="wrap_content"
+        android:layout_height="372dp"
+        android:text="@string/birhday"
+        android:textColor="#7a7374"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_cake"
+        android:layout_width="324dp"
+        android:layout_height="421dp"
+        android:src="@drawable/cake"
+        app:layout_constraintBottom_toBottomOf="@id/lay_root"
+        app:layout_constraintLeft_toLeftOf="@id/lay_root"
+        app:layout_constraintRight_toRightOf="@id/lay_root"
+        app:layout_constraintTop_toTopOf="@id/lay_root" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:text="登录"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_cake"
+        app:layout_constraintStart_toStartOf="@+id/iv_cake" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="348dp"
+        android:text="注册"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/iv_happy" />
+
+</android.support.constraint.ConstraintLayout>
